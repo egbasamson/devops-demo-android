@@ -34,7 +34,7 @@ public class MainActivityTest {
         Espresso.closeSoftKeyboard();
         //perform button click
         Espresso.onView(withId(R.id.btnSave)).perform(click());
-        Espresso.onView(withId(R.id.tvResult)).check(matches(withText(mName)));
+        Espresso.onView(withId(R.id.tvResult)).check(matches(withText(mName+"_chicken")));
     }
 
     @After
