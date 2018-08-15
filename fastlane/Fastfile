@@ -33,6 +33,10 @@ platform :android do
 	# error do |lane, exception|
 	# end
 
+	desc "Running instrumented_tests"
+	lane :inst_test do
+	  instrumented_tests
+	end
 
   desc "Runs all the tests"
   lane :test do
