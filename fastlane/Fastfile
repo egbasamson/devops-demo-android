@@ -16,6 +16,24 @@
 default_platform(:android)
 
 platform :android do
+	# before_all do
+ #  	end
+
+ #  	desc "Runs tests with usage of emulator plugin"
+	# lane :automation_integrationTests do
+	# 	automated_test_emulator_run(
+	# 	  AVD_setup_path: "/Users/pgl/AndroidStudioProjects/DevOpsDemoAndroid/AVD_config.json",
+	# 	  gradle_task: "connectedAndroidTest"
+	# 	)
+	# end
+
+	# after_all do |lane|
+	# end
+
+	# error do |lane, exception|
+	# end
+
+
   desc "Runs all the tests"
   lane :test do
     gradle(task: "test")
